@@ -6,8 +6,6 @@ import com.baomidou.mybatisplus.generator.config.*;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 import com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine;
 
-import java.util.HashMap;
-import java.util.Map;
 
 public class Test {
     public static void main(String[] args) {

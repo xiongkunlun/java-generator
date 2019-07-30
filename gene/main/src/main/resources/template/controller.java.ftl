@@ -49,7 +49,7 @@ public class ${table.controllerName} {
     public ResultPagerVo findListByPage(@RequestBody Map<String, Object> map) {
         int pageNumber = Integer.parseInt((String) map.get("pageNo"));
         int pageSize = Integer.parseInt((String) map.get("pageSize"));
-        YxBill billParam = JSON.parseObject(JSON.toJSONString(map.get("bill")), YxBill.class);
+    ${entity} ${entity} = JSON.parseObject(JSON.toJSONString(map.get("${entity}")), ${entity}.class);
         Page page = PageHelper.startPage(pageNumber, pageSize, true);
         List pageList = service.queryPage(map);
         return ResultUtils.pagerSuccess(pageList, DistConst.SELECT_SUCCUESS, page);
