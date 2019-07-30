@@ -57,7 +57,7 @@ public class Test {
         strategy.setColumnNaming(NamingStrategy.underline_to_camel);
         strategy.setEntityLombokModel(true);
         strategy.setRestControllerStyle(true);
-        strategy.setInclude(new String[] {"uk_student_group"});
+        strategy.setInclude(new String[]{"uk_student_group"});
 //        strategy.setTablePrefix("uk_student");
 
         mpg.setStrategy(strategy);
@@ -74,7 +74,7 @@ public class Test {
 //                this.setMap(map);
             }
         };
-//配置自定义属性注入
+        //配置自定义属性注入
         mpg.setCfg(injectionConfig);
 
         mpg.execute();
